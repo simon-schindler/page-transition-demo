@@ -1,0 +1,16 @@
+/* opacity Transition */
+
+[data-transition]{
+    will-change: opacity;
+    opacity: 1;
+}
+[data-transition].exit{
+   opacity: 0;  
+   transition: opacity .4s ease-out;
+   
+}
+[data-transition].enter{
+    opacity: 1;
+    transition: opacity .5s ease-in;
+}
+

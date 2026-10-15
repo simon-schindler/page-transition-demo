@@ -1,0 +1,9 @@
+.section{
+    height: 100dvh;
+    display: grid;
+    place-items: center;
+}
+
+.section h1{
+    font-size: 4rem;
+}
