@@ -5,5 +5,10 @@
 }
 
 .section h1{
-    font-size: 4rem;
+    font-size: 3rem;
+}
+@media (min-width: 600px){
+    .section h1{
+        font-size: 4rem;
+    }
 }

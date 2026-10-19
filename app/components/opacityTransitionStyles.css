@@ -6,11 +6,11 @@
 }
 [data-transition].exit{
    opacity: 0;  
-   transition: opacity .4s ease-out;
+   transition: opacity .35s ease-out;
    
 }
 [data-transition].enter{
     opacity: 1;
-    transition: opacity .5s ease-in;
+    transition: opacity .45s ease-in;
 }
 

@@ -1,0 +1,32 @@
+.wrapper{
+    width: max-content;
+    grid-column: 2;
+    justify-self: end;
+    padding-right: var(--padding);
+    top: 25px;
+    position: absolute;
+}
+.button{
+    width: 50px;
+    aspect-ratio: 1;
+    font-size: 1.2rem;
+    
+    background: none;
+    border: none;
+}
+.wrapper ul{
+    padding-top: 0.5em;
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 1.5em;
+    
+}
+.wrapper li{
+    list-style: none;
+    
+}
+.wrapper a{
+    font-size: 1.1rem;
+    text-decoration: none;
+
+}
