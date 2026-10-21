@@ -1,25 +1,37 @@
 .wrapper{
+    position: absolute;
+    top: 25px;
     width: max-content;
+    padding-right: var(--padding);
+    
     grid-column: 2;
     justify-self: end;
-    padding-right: var(--padding);
-    top: 25px;
-    position: absolute;
 }
 .button{
     width: 50px;
     aspect-ratio: 1;
+ 
     font-size: 1.2rem;
-    
     background: none;
     border: none;
+    
+    opacity: 1;
+    transition: opacity 0.20ms linear;
+}
+.button.open{
+opacity: 1;
 }
 .wrapper ul{
     padding-top: 0.5em;
     display: grid;
     grid-auto-flow: row;
-    grid-gap: 1.5em;
+    grid-gap: 1.5em; 
     
+    opacity: 0;
+    transition: opacity 0.15s linear;
+}
+.wrapper.open ul{
+    opacity: 1;
 }
 .wrapper li{
     list-style: none;
