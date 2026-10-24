@@ -22,6 +22,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body>
         <TransitionProvider
         header={<Header/>}
+        options={{
+          transitionProperty: 'opacity'
+        }}
         >
           {children}
         </TransitionProvider>
