@@ -1,15 +1,15 @@
 /* opacity Transition */
 
-[data-transition]{
+[data-transition] .page-wrapper{
     will-change: opacity;
     opacity: 1;
 }
-[data-transition].exit{
+[data-transition].exit .page-wrapper{
    opacity: 0;  
    transition: opacity .35s ease-out;
    
 }
-[data-transition].enter{
+[data-transition].enter .page-wrapper{
     opacity: 1;
     transition: opacity .45s ease-in;
 }
