@@ -21,7 +21,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className={geistSans.variable}>
       <body>
         <TransitionProvider
-        header={<Header/>}
+        outside={<Header/>}
         options={{
           transitionProperty: 'opacity'
         }}
