@@ -11,6 +11,6 @@
 }
 [data-transition].enter .page-wrapper{
     opacity: 1;
-    transition: opacity .45s 1.0s cubic-bezier(0.37, 0, 0.63, 1); /*easeInOutSine*/
+    transition: opacity 1.0s cubic-bezier(0.37, 0, 0.63, 1); /*easeInOutSine*/
 }
 
