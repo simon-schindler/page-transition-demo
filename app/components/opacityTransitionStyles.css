@@ -6,11 +6,11 @@
 }
 [data-transition].exit .page-wrapper{
    opacity: 0;  
-   transition: opacity .35s ease-out;
+   transition: opacity .45s cubic-bezier(0.61, 1, 0.88, 1); /*easeInSine*/
    
 }
 [data-transition].enter .page-wrapper{
     opacity: 1;
-    transition: opacity .45s ease-in;
+    transition: opacity .45s 1.0s cubic-bezier(0.37, 0, 0.63, 1); /*easeInOutSine*/
 }
 
