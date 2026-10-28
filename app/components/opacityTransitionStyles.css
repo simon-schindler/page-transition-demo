@@ -11,6 +11,6 @@
 }
 [data-transition].enter .page-wrapper{
     opacity: 1;
-    transition: opacity 0.625s cubic-bezier(0.75, 0.02, 0.95, 1) 33ms; 
+    transition: opacity 0.625s cubic-bezier(0.75, 0.1, 0.95, 1) 33ms; 
 }
 
