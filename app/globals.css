@@ -3,7 +3,7 @@
   --foreground: #171717;
   --padding: 30px;
 }
-@media (min-width: 600px){
+@media (min-width: 650px){
   :root{
     --padding: 60px;
   }
