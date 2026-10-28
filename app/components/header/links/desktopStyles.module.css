@@ -1,5 +1,7 @@
 .wrapper{
-    grid-column: 2;
+    grid-column: 3;
+    justify-self: end;
+    padding-right: var(--padding);
 }
 .wrapper ul{
     width: max-content;
@@ -17,8 +19,11 @@
     text-decoration: none;
     font-size: 1.1rem;
 }
-@media (min-width: 600px){
-    .wrapper ul{
-        grid-column: 2;
+
+@media (min-width: 1100px){
+    .wrapper{
+        justify-self: start;
     }
 }
+
+

@@ -1,8 +1,44 @@
 .wrapper{
     padding-left: var(--padding);
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+
+    display: grid;
+    
 }
 .wrapper a{
     font-size: 1.2rem;
     font-weight: 600;
     text-decoration: none;
+}
+
+.version{
+    
+    grid-row: 2;
+    align-self: end;
+    justify-self: start;
+
+    display: grid;
+    place-items: center;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    height: 1.6em;
+    
+    padding: 0 0.4em;
+    margin-bottom: 0.3em;
+    margin-left: 1em;
+
+    border-radius: 4px;
+    background: black;
+    color: white;
+
+}
+@media (min-width: 550px){
+    .version{
+        grid-column: 2;
+        grid-row: 1;
+    }
 }
