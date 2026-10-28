@@ -16,7 +16,7 @@
 .version{
     
     grid-row: 2;
-    align-self: end;
+    align-self: center;
     justify-self: start;
 
     display: grid;
@@ -34,11 +34,12 @@
     border-radius: 4px;
     background: black;
     color: white;
-
 }
 @media (min-width: 550px){
     .version{
         grid-column: 2;
         grid-row: 1;
+
+        align-self: end;
     }
 }
