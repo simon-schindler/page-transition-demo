@@ -14,7 +14,7 @@ export function Header(){
     const [mobil, setMobil]=useState(false)
     
     useEffect(()=>{
-        const m = matchMedia("(max-width: 599px)")
+        const m = matchMedia("(max-width: 650px)")
         setMobil(m.matches)
         const handleChange=(e: MediaQueryListEvent)=>{
             setMobil(e.matches)
