@@ -1,4 +1,4 @@
-import { TransitionLink } from "page-transition"
+import { TransitionLink } from "page-transition/css"
 import styles from "./logoStyles.module.css"
 export function Logo(){
     return(
@@ -9,7 +9,7 @@ export function Logo(){
                 </TransitionLink>
             </div>
             <div className={styles.version}>
-                v 0.1.0-beta.57
+                v 0.1.0-beta.58
             </div>
         </>
         

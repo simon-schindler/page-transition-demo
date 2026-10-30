@@ -1,6 +1,6 @@
 "use client"
 
-import { TransitionLink } from "page-transition"
+import { TransitionLink } from "page-transition/css"
 
 export function Links(){
 
