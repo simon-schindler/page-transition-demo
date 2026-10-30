@@ -1,16 +1,20 @@
 /* opacity Transition */
 
-[data-transition] .page-wrapper{
+[data-transition] .overlay{
+    position: fixed;
+    z-index: 99;
+    inset: 0;
+    background-color: var(--background);
+
     will-change: opacity;
-    opacity: 1;
+    opacity: 0;
 }
-[data-transition].exit .page-wrapper{
-   opacity: 0;  
+[data-transition].exit .overlay{
+   opacity: 1;  
    transition: opacity .5s cubic-bezier(0.18, 0.95, 0.95, 1); 
    
 }
-[data-transition].enter .page-wrapper{
-    opacity: 1;
+[data-transition].enter .overlay{
+    opacity: 0;
     transition: opacity 0.625s cubic-bezier(0.75, 0.1, 0.95, 1) 33ms; 
 }
-
