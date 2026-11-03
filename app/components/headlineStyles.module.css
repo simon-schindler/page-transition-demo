@@ -1,0 +1,19 @@
+.h1{
+    font-size: 3rem;
+    line-height: 1em;
+    overflow: hidden;
+}
+.headline{
+    height: 1em;
+    transform: translateY(100%);
+    transition: transform 0.875s cubic-bezier(0.15, 0.2, 0.25, 1) 33ms;
+}
+.headline.mounted{
+    transform: translateY(0%);
+}
+
+@media (min-width: 750px){
+    .h1{
+        font-size: 4rem;
+    }
+}
