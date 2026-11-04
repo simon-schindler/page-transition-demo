@@ -10,8 +10,10 @@
     opacity: 0;
     transition: opacity 0.4s linear;
 }
-.wrapper.loaded{
-    opacity: 1;
+@media (max-width: 749px){
+    .wrapper{
+        opacity: 1;
+    }
 }
 .button{
     width: 50px;
@@ -48,3 +50,4 @@ opacity: 1;
     text-decoration: none;
 
 }
+
