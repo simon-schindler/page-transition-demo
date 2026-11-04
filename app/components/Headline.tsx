@@ -15,7 +15,6 @@ export function Headline({headline}:Props){
         void document.documentElement.offsetWidth
         setMounted(true)
     },[])
-    
     return(
         <h1 className={styles.h1}>
             <div className={`${styles.headline} ${mounted ? styles.mounted:''}`}>

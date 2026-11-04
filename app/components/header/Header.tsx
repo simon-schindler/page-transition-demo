@@ -9,12 +9,9 @@ import { Logo } from './logo/Logo'
 import { DesktopMenu } from './links/DesktopMenu'
 import { MobilMenu } from './links/MobilMenu'
 
-import { useInitContext } from '../context/InitContext'
-
 export function Header(){
 
     const [mobil, setMobil]=useState(false)
-    const { loaded } = useInitContext()
     
     useEffect(()=>{
         const m = matchMedia("(max-width: 749px)")
@@ -28,7 +25,7 @@ export function Header(){
     },[])
 
     return(
-        <header className={`${styles.header} ${loaded ? styles.mounted:''}`}>
+        <header className={styles.header}>
             <Logo/>
             {
                 mobil ? <MobilMenu/> : <DesktopMenu/>

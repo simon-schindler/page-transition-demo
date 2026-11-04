@@ -6,6 +6,12 @@
     
     grid-column: 2;
     justify-self: end;
+
+    opacity: 0;
+    transition: opacity 0.2ms linear;
+}
+.wrapper .loaded{
+    opacity: 1;
 }
 .button{
     width: 50px;

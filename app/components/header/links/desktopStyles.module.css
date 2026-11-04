@@ -2,6 +2,12 @@
     grid-column: 3;
     justify-self: end;
     padding-right: var(--padding);
+    
+    opacity: 0;
+    transition: opacity 0.2ms linear;
+}
+.wrapper .loaded{
+    opacity: 1;
 }
 .wrapper ul{
     width: max-content;
