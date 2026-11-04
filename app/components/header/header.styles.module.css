@@ -10,6 +10,12 @@
     grid-auto-rows: 60px;
     align-items: end;
     justify-items: center;
+
+    opacity: 1;
+    transition: opacity 0.2ms linear;
+}
+.header .mounted{
+    opacity: 1;
 }
 
 @media (min-width: 750px){

@@ -1,6 +1,6 @@
 "use client"
 
-import { useLayoutEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import styles from './header.styles.module.css'
 
@@ -9,22 +9,26 @@ import { Logo } from './logo/Logo'
 import { DesktopMenu } from './links/DesktopMenu'
 import { MobilMenu } from './links/MobilMenu'
 
+import { useInitContext } from '../context/InitContext'
+
 export function Header(){
 
     const [mobil, setMobil]=useState(false)
+    const { loaded } = useInitContext()
     
-    useLayoutEffect(()=>{
+    useEffect(()=>{
         const m = matchMedia("(max-width: 749px)")
         setMobil(m.matches)
         const handleChange=(e: MediaQueryListEvent)=>{
             setMobil(e.matches)
         }
+
         m.addEventListener('change', handleChange)
         return()=>m.removeEventListener('change', handleChange)
     },[])
 
     return(
-        <header className={styles.header}>
+        <header className={`${styles.header} ${loaded ? styles.mounted:''}`}>
             <Logo/>
             {
                 mobil ? <MobilMenu/> : <DesktopMenu/>
