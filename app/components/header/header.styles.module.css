@@ -11,7 +11,7 @@
     align-items: end;
     justify-items: center;
 
-    opacity: 1;
+    opacity: 0;
     transition: opacity 0.2ms linear;
 }
 .header .mounted{
