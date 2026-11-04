@@ -5,6 +5,7 @@ import "./components/opacityTransitionStyles.css"
 
 import { TransitionProvider } from "page-transition"
 import { Header } from "./components/header/Header";
+import { InitProvider } from "./components/context/InitContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           overlay: true
         }}
         >
-          {children}
+          <InitProvider>
+            {children}
+          </InitProvider>
         </TransitionProvider>
       </body>
     </html>
