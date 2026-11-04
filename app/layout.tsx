@@ -21,17 +21,17 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={geistSans.variable}>
       <body>
-        <TransitionProvider
-        outside={<Header/>}
-        options={{
-          transitionProperty: 'opacity',
-          overlay: true
-        }}
-        >
-          <InitProvider>
+        <InitProvider>
+          <TransitionProvider
+          outside={<Header/>}
+          options={{
+            transitionProperty: 'opacity',
+            overlay: true
+          }}
+          >
             {children}
-          </InitProvider>
-        </TransitionProvider>
+          </TransitionProvider>
+        </InitProvider>
       </body>
     </html>
   );
