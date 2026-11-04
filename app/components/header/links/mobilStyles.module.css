@@ -8,7 +8,7 @@
     justify-self: end;
 
     opacity: 0;
-    transition: opacity 0.15s linear;
+    transition: opacity 0.4s linear;
 }
 .wrapper.loaded{
     opacity: 1;
