@@ -4,7 +4,7 @@
     padding-right: var(--padding);
     
     opacity: 0;
-    transition: opacity 0.2ms linear;
+    transition: opacity 0.15s linear;
 }
 .wrapper.loaded{
     opacity: 1;

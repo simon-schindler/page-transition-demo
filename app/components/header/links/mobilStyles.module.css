@@ -8,7 +8,7 @@
     justify-self: end;
 
     opacity: 0;
-    transition: opacity 0.2ms linear;
+    transition: opacity 0.15s linear;
 }
 .wrapper.loaded{
     opacity: 1;
@@ -22,7 +22,7 @@
     border: none;
     
     opacity: 1;
-    transition: opacity 0.2ms linear;
+    
 }
 .button.open{
 opacity: 1;
