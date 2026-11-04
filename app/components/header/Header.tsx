@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from 'react'
+import { useLayoutEffect, useState } from 'react'
 
 import styles from './header.styles.module.css'
 
@@ -13,7 +13,7 @@ export function Header(){
 
     const [mobil, setMobil]=useState(false)
     
-    useEffect(()=>{
+    useLayoutEffect(()=>{
         const m = matchMedia("(max-width: 749px)")
         setMobil(m.matches)
         const handleChange=(e: MediaQueryListEvent)=>{

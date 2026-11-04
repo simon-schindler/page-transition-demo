@@ -21,7 +21,6 @@ export function InitProvider({children}:{children:ReactNode}){
 
     useEffect(()=>{
         setLoaded(true)
-        document.documentElement.style.setProperty('--opacity','1')
     },[])
 
     return(

@@ -18,9 +18,7 @@
   color: var(--foreground);
   font-family: var(--font-geist-sans);
 }
-html{
-  opacity: var(--opacity);
-}
+
 html,body{
   width: 100%;
   
