@@ -20,6 +20,7 @@ export function InitProvider({children}:{children:ReactNode}){
     const [loaded, setLoaded]=useState<boolean>(false)
 
     useEffect(()=>{
+        void document.documentElement.offsetWidth
         setLoaded(true)
     },[])
 
