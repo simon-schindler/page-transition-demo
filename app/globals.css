@@ -2,7 +2,8 @@
   --background: #ffffff;
   --foreground: #171717;
   --padding: 30px;
-  --duration: 0s;
+  --animationDesktop: none;
+  --animationMobil: none;
 }
 @media (min-width: 750px){
   :root{
@@ -26,4 +27,12 @@ html,body{
 section{
   width: 100%;
   background: var(--background);
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }

@@ -20,7 +20,6 @@ export function InitProvider({children}:{children:ReactNode}){
     const [loaded, setLoaded]=useState<boolean>(false)
 
     useEffect(()=>{
-        document.documentElement.style.setProperty('--duration','0.3s')
         setLoaded(true)
     },[])
 
