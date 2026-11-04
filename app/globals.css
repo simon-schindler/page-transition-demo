@@ -2,6 +2,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --padding: 30px;
+  --opacity: 0;
 }
 @media (min-width: 750px){
   :root{
@@ -16,6 +17,9 @@
   
   color: var(--foreground);
   font-family: var(--font-geist-sans);
+}
+html{
+  opacity: var(--opacity);
 }
 html,body{
   width: 100%;

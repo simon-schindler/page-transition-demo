@@ -1,6 +1,6 @@
 "use client"
 
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 import type { ReactNode, Dispatch, SetStateAction } from "react";
 interface ContextProps{
@@ -16,7 +16,14 @@ export function useInitContext(){
 }
 
 export function InitProvider({children}:{children:ReactNode}){
+    
     const [loaded, setLoaded]=useState<boolean>(false)
+
+    useEffect(()=>{
+        setLoaded(true)
+        document.documentElement.style.setProperty('--opacity','1')
+    },[])
+
     return(
         <InitContext.Provider value={{loaded,setLoaded}}>
             {children}

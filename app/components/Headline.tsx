@@ -7,16 +7,15 @@ interface Props{
     headline: string
 }
 export function Headline({headline}:Props){
-    const {loaded, setLoaded}=useInitContext()
+    
+    const {loaded}=useInitContext()
     const [mounted, setMounted]=useState(!loaded)
+    
     useEffect(()=>{
-        if(!loaded){
-            setLoaded(true)
-            return
-        }
         void document.documentElement.offsetWidth
         setMounted(true)
     },[])
+    
     return(
         <h1 className={styles.h1}>
             <div className={`${styles.headline} ${mounted ? styles.mounted:''}`}>
