@@ -8,11 +8,20 @@
     justify-self: end;
 
     opacity: 0;
-    transition: opacity 0.4s linear;
 }
-@media (max-width: 749px){
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media (max-width: 750px){
     .wrapper{
         opacity: 1;
+        animation: fadeIn 0.3s linear;
     }
 }
 .button{
