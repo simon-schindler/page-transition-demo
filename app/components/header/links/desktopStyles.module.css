@@ -16,7 +16,7 @@
 @media (min-width: 750px){
     .wrapper{
         opacity: 1;
-        animation: fadeIn 0.4s linear;
+        animation: fadeIn var(--duration) linear;
     }
 }
 .wrapper ul{

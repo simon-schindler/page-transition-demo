@@ -21,7 +21,7 @@
 @media (max-width: 750px){
     .wrapper{
         opacity: 1;
-        animation: fadeIn 0.3s linear;
+        animation: fadeIn var(--duration) linear;
     }
 }
 .button{

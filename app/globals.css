@@ -2,7 +2,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --padding: 30px;
-  --opacity: 0;
+  --duration: 0s;
 }
 @media (min-width: 750px){
   :root{
