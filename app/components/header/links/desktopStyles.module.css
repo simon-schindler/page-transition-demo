@@ -6,7 +6,7 @@
     opacity: 0;
     transition: opacity 0.2ms linear;
 }
-.wrapper .loaded{
+.wrapper.loaded{
     opacity: 1;
 }
 .wrapper ul{
