@@ -9,11 +9,17 @@
 
     opacity: 0;
 }
-
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 @media (max-width: 750px){
     .wrapper{
-        opacity: 1;
-        animation: var(--animationMobil);
+        animation: fadeIn 0.4s linear forwards;
     }
 }
 .button{

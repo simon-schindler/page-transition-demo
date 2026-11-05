@@ -9,15 +9,15 @@ interface Props{
 export function Headline({headline}:Props){
     
     const {loaded}=useInitContext()
-    const [mounted, setMounted]=useState(!loaded)
+    const [mounted, setMounted]=useState(false)
     
     useEffect(()=>{
-        void document.documentElement.offsetWidth
+        if(!loaded)return
         setMounted(true)
     },[])
     return(
         <h1 className={styles.h1}>
-            <div className={`${styles.headline} ${mounted ? styles.mounted:''}`}>
+            <div className={`${styles.headline} ${mounted ? styles.mounted:styles.none}`}>
                 { headline }
             </div>
         </h1>

@@ -18,8 +18,7 @@ export function Header(){
         setMobil(m.matches)
         const handleChange=(e: MediaQueryListEvent)=>{
             setMobil(e.matches)
-            document.documentElement.style.setProperty('--animationDesktop', e.matches?  'none':'fadeIn 0.3s linear forwards')
-            document.documentElement.style.setProperty('--animationMobil', e.matches?  'fadeIn 0.3s linear forwards':'none')
+            document.documentElement.style.setProperty('--animation', 'fadeIn 0.4s linear forwards')
         }
 
         m.addEventListener('change', handleChange)

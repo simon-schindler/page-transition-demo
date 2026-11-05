@@ -2,8 +2,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --padding: 30px;
-  --animationDesktop: none;
-  --animationMobil: none;
+  --animation: none;
 }
 @media (min-width: 750px){
   :root{

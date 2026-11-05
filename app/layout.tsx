@@ -26,7 +26,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           outside={<Header/>}
           options={{
             transitionProperty: 'opacity',
-            overlay: true
+            overlays: 1
           }}
           >
             {children}
