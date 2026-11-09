@@ -1,8 +1,10 @@
 "use client"
 
 import { TransitionLink } from "page-transition/css"
+import { useActiveLink } from "page-transition"
 
 export function Links(){
+    const { saveRef } = useActiveLink()
 
     const links =[
         {linkName: "HOME", href: "/"},
@@ -14,7 +16,7 @@ export function Links(){
         <ul>
             {
                 links.map((link, i)=>(
-                    <li key={i}>
+                    <li key={i} ref={saveRef(link.href)}>
                         <TransitionLink href={link.href}>
                             {link.linkName}
                         </TransitionLink>
