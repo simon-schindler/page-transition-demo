@@ -1,10 +1,10 @@
 .h1{
     font-size: 3rem;
-    line-height: 1em;
+    line-height: 0.9em;
     overflow: hidden;
 }
 .headline{
-    height: 1em;
+    height: 0.9em;
     transform: translateY(100%);
 }
 @keyframes up{
@@ -16,7 +16,7 @@
     }
 }
 .headline.mounted{
-    animation: up 0.85s cubic-bezier(0.15, 0.2, 0.2, 1) 33ms forwards;
+    animation: up 0.825s cubic-bezier(0.15, 0.2, 0.2, 1) 33ms forwards;
 }
 .headline.none{
     transform: translateY(0%);
