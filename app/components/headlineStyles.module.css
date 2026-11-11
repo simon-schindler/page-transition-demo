@@ -16,7 +16,7 @@
     }
 }
 .headline.mounted{
-    animation: up 0.825s cubic-bezier(0.15, 0.2, 0.2, 1) 33ms forwards;
+    animation: up 0.8s cubic-bezier(0.15, 0.2, 0.2, 1) 33ms forwards;
 }
 .headline.none{
     transform: translateY(0%);
@@ -25,5 +25,8 @@
 @media (min-width: 750px){
     .h1{
         font-size: 4rem;
+    }
+    .headline.mounted{
+        animation: up 0.825s cubic-bezier(0.15, 0.2, 0.2, 1) 33ms forwards;
     }
 }
