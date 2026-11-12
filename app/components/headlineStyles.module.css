@@ -26,7 +26,4 @@
     .h1{
         font-size: 4rem;
     }
-    .headline.mounted{
-        animation: up 0.825s cubic-bezier(0.15, 0.2, 0.2, 1) 33ms forwards;
-    }
 }
