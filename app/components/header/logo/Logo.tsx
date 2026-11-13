@@ -9,7 +9,7 @@ export function Logo(){
                 </TransitionLink>
             </div>
             <div className={styles.version}>
-                v0.2.4
+                v0.2.5
             </div>
         </>
         
