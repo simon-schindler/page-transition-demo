@@ -12,7 +12,7 @@
 }
 [data-transition].exit .overlay{
    opacity: 1;  
-   transition: opacity .65s cubic-bezier(0.18, 0.9, 0.8, 1);
+   transition: opacity .65s cubic-bezier(0.18, 0.9, 0.75, 1);
 }
 [data-transition].enter .overlay{
     opacity: 0;
