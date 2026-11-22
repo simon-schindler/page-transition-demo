@@ -10,12 +10,29 @@
     will-change: opacity;
     opacity: 0;
 }
-[data-transition].exit .overlay{
-   opacity: 1;  
-   transition: opacity .63s cubic-bezier(0.18, 0.9, 0.75, 1);
+@keyframes exit{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
-
+[data-transition].exit .overlay{ 
+   animation: exit .63s cubic-bezier(0.18, 0.9, 0.75, 1) forwards;
+}
+@keyframes enter{
+    0%{
+        opacity: 0;
+    }
+    54%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 [data-transition].enter .overlay{
     opacity: 0;
-    transition: opacity 1.3s cubic-bezier(0.5, 0.1, 0.4, 1) 33ms;
+    animation: enter 1.3s cubic-bezier(0.5, 0.1, 0.4, 1) 33ms forwards; /*0.7*/
 }
